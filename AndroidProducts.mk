@@ -18,4 +18,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     dot_h850-userdebug \
+	dot_h850-user \
     dot_h850-eng
