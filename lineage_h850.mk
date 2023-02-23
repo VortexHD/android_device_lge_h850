@@ -18,20 +18,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common DotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from h850 device
 $(call inherit-product, device/lge/h850/device.mk)
 
-# DotOS variables
-#WITH_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h850
-PRODUCT_NAME := dot_h850
+PRODUCT_NAME := lineage_h850
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H850
 PRODUCT_RELEASE_NAME := G5
