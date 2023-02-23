@@ -24,6 +24,9 @@ TARGET_OTA_ASSERT_DEVICE := g5,h1,h850
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h850_defconfig
+BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel/$(BOARD_KERNEL_IMAGE_NAME)
+TARGET_FORCE_PREBUILT_KERNEL := true
 
 # Partitions
 # Override this after inheriting g5 common size
