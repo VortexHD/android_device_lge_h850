@@ -28,6 +28,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel/$(BOARD_KERNEL_IMAGE_NAME)
 TARGET_FORCE_PREBUILT_KERNEL := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-12-01
+
 # Partitions
 # Override this after inheriting g5 common size
 # h850 system image partition is sized differently than US variants
